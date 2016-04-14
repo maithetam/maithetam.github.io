@@ -1,9 +1,10 @@
 body {
 	background: url("../Img/Bút máy/background.jpg"); 
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed; 
-	}
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
 a:link {color: black; text-decoration: none;}
 a:visited {color: black;text-decoration: none;}
 a:hover {color: violet;text-decoration: none;}
@@ -12,7 +13,8 @@ p#p01 {text-indent: 60px;}
 .i00 {border: 5px solid orange;
 	border-radius: 500px;
 	width: 500px;
-	height:125px;	
+	height:125px;
+	margin: auto;	
 	}
 .i01 {
 	font-style: bold;
@@ -30,6 +32,7 @@ width: 50%;}
 table, th, td {
 	border: 10px white;
 }
+div {color: white;}	 
 caption {font-style: bold;
 	font-style: italic;
 	text-transform: uppercase;
@@ -37,4 +40,29 @@ caption {font-style: bold;
 td {text-align: center;
 width: 50%;
 padding: 30px;}
+.active {background-color: orange;}
+.active div {color: black;
+	font-weight:bold;}
+ul {
+	list-style-type: none;
+	overflow: hidden ;
+	margin: auto;
+	width: 95%;
+	text-align: center;
+	background-color: #333;
+	border-radius: 20px;
+	border: 2px solid #333;
+	max-width: 1250px;}
+li {float: left;
+	border-right: 1px solid #333;}
+li a{display: block;
+	color: white ;
+	text-align:center;
+	padding: 20px;
+	text-decoration: none;
+	width: 75px;
+	}
+li a:hover { background-color: orange;
+	color: black; } 
+	
 

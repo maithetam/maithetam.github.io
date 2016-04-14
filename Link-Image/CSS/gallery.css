@@ -1,0 +1,12 @@
+.i05 img {	
+	border: 2px solid orange;
+	width: 400px;
+	height: 100px;
+	float: left;
+	margin: 3px;
+}
+.i05 img:hover {
+	transform: scale(1.5,1.5);}
+.i05 {max-width: 1250px;
+	margin: 0 auto;}
+#parker {margin-left: 413px;}				

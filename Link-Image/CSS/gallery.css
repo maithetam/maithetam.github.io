@@ -2,10 +2,46 @@
 	border: 2px solid orange;
 	width: 400px;
 	height: 100px;
-	float: left;
 	margin: 3px;
+	transition: all 0.5s linear;
 }
 .i05 img:hover {
-	transform: scale(1.5,1.5);}
+	transform: translate(0,-10px);
+	box-shadow: 0 5px 5px 0 #333;}
+.but2 img:hover {
+	transform: scale(1.5);
+	opacity: 0.7;
+}	
 .i05 {max-width: 1250px;
-	margin: 0 auto;}		
+	margin: 0 auto;}
+.i05 img {margin-bottom: 70px ;
+	vertical-align: middle;}
+.but2 {max-width: 1250px;
+	margin: 0 auto;
+}
+.but2 img {	
+	display: inline;
+	border: 2px solid orange;
+	width: 400px;
+	height: 100px;
+	margin: 3px;
+	transition: all 0.5s linear;}
+.dong2 {
+	height: 110px;
+	width: 410px;
+	overflow: hidden;
+	float: left;
+	margin-right: 5px;}
+p {
+	font-size: 14px;}
+#tacgia {right: 20px;
+	bottom: 10px;
+	position: absolute;
+	animation: tên11 10s ease infinite;}		
+@keyframes tên11 {
+	0% {color: white; bottom:10px; right: 20px;}
+	25% {color: transparent; bottom: 10px; right:500px ; }
+	75% {color: transparent; bottom: 10px; right: 0;}
+	100% {color: white; bottom: 10px; right: 20px;}
+
+}	

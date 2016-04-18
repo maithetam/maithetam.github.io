@@ -1,0 +1,17 @@
+@font-face { font-family: PantonI; src: url('../iCielPanton-BlackItalic.otf'); } 
+body {background-image: url("../Img/2.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;}
+h1, h3 {text-align: center;
+	font-family: PantonI;}
+h6 {text-align: center;}	
+h1 {font-size: 45px;}
+img {position: absolute;
+	left:32%;
+	border: 2px solid #333;
+	animation: shaker 0.1s ease infinite;}
+@keyframes shaker {
+	0% { transform: rotate(0deg);}
+	100% {transform: rotate(5deg);}
+}	

@@ -1,0 +1,91 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="CSS/cal.css">
+</head>
+<body>
+	<div id="inbox">
+		<p id="innerbox"></p>
+	</div>
+	<div id="ansbox">
+		<p id="result"></p>
+	</div>
+	<button onclick="Clear()"><img src="Img/CE.png" alt = "CE" title="CE"/></button>	
+	<button onclick="numberZero()"><img src="Img/0.png" alt = "0" title="0"/></button>	
+	<button onclick="numberOne()"><img src="Img/1.png" alt = "1" title="1"/></button>
+	<button onclick="numberTwo()"><img src="Img/2.png" alt = "2" title="2"/></button>
+	<button onclick="numberThree()"><img src="Img/3.png" alt = "3" title="3"/></button>
+	<button onclick="numberFour()"><img src="Img/4.png" alt = "4" title="4"/></button>
+	<button onclick="numberFive()"><img src="Img/5.png" alt = "5" title="5"/></button>
+	<button onclick="numberSix()"><img src="Img/6.png" alt = "6" title="6"/></button>
+	<button onclick="numberSeven()"><img src="Img/7.png" alt = "7" title="7"/></button>
+	<button onclick="numberEight()"><img src="Img/8.png" alt = "8" title="8"/></button>
+	<button onclick="numberNine()"><img src="Img/9.png" alt = "9" title="9"/></button>
+	<button onclick="Equal()"><img src="Img/=.png" alt = "=" title="="/></button>
+	<button onclick="Plus()"><img src="Img/+.png" alt = "+" title="+"/></button>
+	<button onclick="Minus()"><img src="Img/-.png" alt = "-" title="-"/></button>
+	<button onclick="Multiply()"><img src="Img/*.png" alt = "*" title="*"/></button>
+	<button onclick="Divide()"><img src="Img/|.png" alt = "/" title="/"/></button>
+	<button onclick="Percent()"><img src="Img/%.png" alt = "%" title="%"/></button>
+	<button onclick="Dot()"><img src="Img/dot.png" alt = "." title="."/></button>
+
+<script type="text/javascript">
+	var x = "";
+	function Clear() {
+		x = document.getElementById("innerbox").innerText = "";
+		document.getElementById("ansbox").innerText = "";
+		}
+	function numberZero() {
+		x = document.getElementById("innerbox").innerText = x + 0;
+		}
+	function numberOne() {
+		x = document.getElementById("innerbox").innerText = x + 1;
+		}
+	function numberTwo() {
+		x = document.getElementById("innerbox").innerText = x + 2;
+		}
+	function numberThree() {
+		x = document.getElementById("innerbox").innerText = x + 3;
+		}
+	function numberFour() {
+		x = document.getElementById("innerbox").innerText = x + 4;
+		}
+	function numberFive() {
+		x = document.getElementById("innerbox").innerText = x + 5;
+		}
+	function numberSix() {
+		x = document.getElementById("innerbox").innerText = x + 6;
+		}
+	function numberSeven() {
+		x = document.getElementById("innerbox").innerText = x + 7;
+		}
+	function numberEight() {
+		x = document.getElementById("innerbox").innerText = x + 8;
+		}
+	function numberNine() {
+		x = document.getElementById("innerbox").innerText = x + 9;
+		}
+	function Plus() {
+		x = document.getElementById("innerbox").innerText = x + "+";
+		}
+	function Minus() {
+		x = document.getElementById("innerbox").innerText = x + "-";
+		}
+	function Multiply() {
+		x = document.getElementById("innerbox").innerText = x + "*";
+		}
+	function Divide() {
+		x = document.getElementById("innerbox").innerText = x + "/";
+		}
+	function Dot() {
+		x = document.getElementById("innerbox").innerText = x + ".";
+		}
+	function Equal() {
+		document.getElementById("ansbox").innerText = eval(x);
+		}												
+</script>
+
+</body>
+</html>

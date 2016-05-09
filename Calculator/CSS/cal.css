@@ -1,0 +1,40 @@
+
+#inbox {
+	border: solid 2px black;
+	width: 50% ;
+	height: 50px;
+	margin: auto;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+#ansbox {
+	border: solid 2px black;
+	width: 50% ;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+#innerbox {
+	font-size: 25px;
+	text-align: right;
+}
+#result {
+	font-size: 25px;
+	text-align: right;
+}
+#clr {
+	position: fixed;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+table {
+	margin: auto;
+}
+img {
+	width: 180px;
+}
+button {
+	width: 200px;
+}
+

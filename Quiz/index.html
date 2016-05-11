@@ -1,0 +1,105 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+	<div><p id="nuMber"></p></div>
+	<div id="OTL">
+		<div id="Qst"><p id="Quest"></p></div>
+		<button onclick="kiemtra(this)" id="A1"></button> <br/>
+		<button onclick="kiemtra(this)" id="A2"></button> <br/>
+		<button onclick="kiemtra(this)" id="A3"></button> <br/>
+		<button onclick="kiemtra(this)" id="A4"></button> <br/>
+		<p>click answer to continue</p>
+	</div>
+	<script type="text/javascript">
+		var x = 0
+		var cur = 0
+		var Q_1 = {
+			Question : "Where is Paris?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",
+		}
+		var Q_2 = {
+			Question : "Where is Pari ?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",			
+		}
+		var Q_3 = {
+			Question : "Where is Par ?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",			
+		}
+		var Q_4 = {
+			Question : "Where is Pa ?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",			
+		}
+		var Q_5 = {
+			Question : "Where is P ?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",			
+		}
+		var Q_6 = {
+			Question : "Where is ?",
+			Ans1 : "Norway" ,
+			Ans2 : "France" , 
+			Ans3: "Belgium" ,
+			Ans4: "Beijing",
+			DAD: "France",			
+		}	
+		var Quiz = [Q_1, Q_2, Q_3, Q_4, Q_5, Q_6,""]
+			document.getElementById("Quest").innerHTML = Quiz[cur].Question;
+			document.getElementById("A1").innerHTML = Quiz[cur].Ans1;
+			document.getElementById("A2").innerHTML = Quiz[cur].Ans2;
+			document.getElementById("A3").innerHTML = Quiz[cur].Ans3;
+			document.getElementById("A4").innerHTML = Quiz[cur].Ans4;
+			document.getElementById("nuMber").innerHTML = (cur + 1) + "/" + (Quiz.length - 1)
+		function nextQ() {
+			cur++;
+			if (cur < Quiz.length - 1) {
+			document.getElementById("Quest").innerHTML = Quiz[cur].Question;
+			document.getElementById("A1").innerHTML = Quiz[cur].Ans1;
+			document.getElementById("A2").innerHTML = Quiz[cur].Ans2;
+			document.getElementById("A3").innerHTML = Quiz[cur].Ans3;
+			document.getElementById("A4").innerHTML = Quiz[cur].Ans4;
+			document.getElementById("nuMber").innerHTML = (cur + 1 ) + "/6"	}
+			if (cur == Quiz.length - 1) {
+				if (x < Quiz.length - 1) {
+					document.getElementById("OTL").innerHTML = "Ban tra loi dung " + x + "/" + (Quiz.length - 1) + " cau hoi"; }
+				if (x == Quiz.length - 1) {
+					window.location.assign("chucmung.html")
+				}
+			}
+		}
+
+		function kiemtra(button) {
+			if(button.innerHTML == Quiz[cur].DAD){
+				x++;
+				nextQ()
+			} else {
+				nextQ()
+			}
+		}
+	</script>
+
+</body>
+</html>

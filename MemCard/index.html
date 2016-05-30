@@ -59,10 +59,27 @@
 </tr>
 <script src="jquery-2.2.3.min.js"></script>
 <script type="text/javascript">
+	var current = null;
 	$('.card').click(function() {
 		$(':first-child',this).css("transform","rotateY(180deg)");
 		$(':last-child',this).css("transform","rotateY(0deg)");
-	} );	
+	} );
+	$('.card').click(function() {
+		if (!current) {
+			current = $(':last-child',this);
+		}
+		else {
+			if (current.attr('src') != $(':last-child',this).attr('src')) {
+				setTimeout(function() {
+				console.log('Diff');
+				current = null; }, 500);	
+			}
+			else {
+				console.log('same');	
+				current = null;
+			}
+		}
+	});	
 </script>
 <script type="text/javascript">
 	var arr = new Array();
